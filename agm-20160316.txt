@@ -1,0 +1,127 @@
+# Proposal to delay the meeting until Kier and Tom arrives
+
+In favour: 4
+Against: 1
+Abstained: 0
+
+Passed.
+
+# Amendment of constitution
+
+In section 9 (1) (b) change the word "A" to the word "An"
+
+In favour: 9
+Against: 0
+Abstained: 0
+
+# Presentation of accounts
+
+We don't yet have a bank account, so despite winning funding we have no money.
+
+# Report of committee members' activities
+## President
+
+I don't know. I did some things and organised things. Kept the society alive.
+I made the presentations almost every week, organised SR(A)WN, and generally
+organised doings and tech days.
+
+## Secretary
+
+I've been an absolutely terrible secretary. I've not really done much in the
+way of meetings, and I forgot to submit the previous constitution amendment.
+
+## Treasurer
+
+Funding applications happened. We got money, which we don't have yet.
+
+## Social Secretary
+
+I organised a few socials. Sprinkles social, it went well. Failed to organise
+a PlayZone social. Also the Blueshirt activity day.
+
+## Equipment and Safety Officer
+
+We have kit. I organised it at some point but it's no longer organised. I blame
+everyone else. I recently found there's a health and safety form on the git,
+and submitted it.
+
+# Self-nomination for new committee
+
+## Proposal to make everyone nominated to give a speech, not just people with contested positions
+
+In favour: 6
+Against: 4
+Abstained: 0
+
+## President
+Rashmi
+Mohit
+Andy
+## Secretary
+Samson
+## Treasurer
+Rashmi
+Mohit
+## Social Secretary
+Andy
+## Equipment and Safety Officer
+Samson
+Rashmi
+Kier
+
+# Election of new committee
+Secret ballot requested.
+
+## President
+Rashmi 3
+Mohit
+Andy 5
+RON
+Spoilt ballot 1
+
+New president: Andy
+
+## Secretary
+Samson 7
+RON 2
+
+New secretary: Samson
+
+## Treasurer
+Rashmi 7
+Mohit 1
+RON 1
+
+New treasurer: Rashmi
+
+## Social Secretary
+Andy 8
+RON 1
+
+New social sec: Andy
+
+## Equipment and Safety Officer
+Samson
+Rashmi
+Kier 9
+RON
+
+New equipment and safety officer: Kier
+
+# Any Other Business
+
+None
+
+# Current committee positions
+
+* President — Leader of the Southampton Branch and liaison with trustees
+* Secretary — Organises Southampton-specific meetings/wrangles
+SUSU-related things
+* Treasurer — Handles any budget that the Southampton Branch might have
+* Social Secretary — Organises Southampton-specific socials/etc.
+(including with other societies)
+* Equipment and Safety Officer — Keeps equipment stored at Southampton
+organised (including ensuring the inventory is up-to-date), and leads in
+ensuring reasonable health and safety vigilance. This will involve
+liaising with SUSU and attending the annual H&S training.
+
