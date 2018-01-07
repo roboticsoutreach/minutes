@@ -31,7 +31,7 @@
 - Clearer ownership of major areas
 - Trello isnt really working, not sure what the best solution is, or what it would look like
 - Trac is a bit shit, but might work?
-- Tyler research into possible solutions, and how to use it. To review in Jan 
+- Action (Tyler): Research into possible solutions, and how to use it. To review in Jan
 
 ## Collaboration
 - Coordinator per task, _not_ an owner. Supervise task running
@@ -44,7 +44,7 @@
     - Public facing side
     - Teams (bundle with above?)
 
-- Peter: Create document specifying roles for tasks, who does what
+- Action (Peter): Create document specifying roles for tasks, who does what
 
 ## Kit Issues
 - Kit setup isnt very mature
