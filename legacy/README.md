@@ -1,3 +1,0 @@
-# Student Robotics Southampton Minutes
-
-
