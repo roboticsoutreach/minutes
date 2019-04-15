@@ -17,7 +17,6 @@ Meeting Minute - 2019-04-15
 9. Volunteers
 10. Camera module
 11. Outreach stuff
-12. ACTION POINTS
 
 
 - **Participants:**
@@ -130,6 +129,7 @@ Meeting Minute - 2019-04-15
 - Talk to MSLC
 - JW to Move MicroBit worksheet into http://github.com/s-r-o/
     - Add link to minutes too please
+- DT to make a doodle poll for a Hackday for Smallpiece stuff
 
 ## Notes 
 <!-- Other important details discussed during the meeting can be entered here. -->
