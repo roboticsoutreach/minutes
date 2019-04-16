@@ -69,7 +69,7 @@ Meeting Minute - 2019-04-15
         - We can fork
 6. SR Competition
     - General positive sentiment
-    - HR team felt it was for our benefirt not theirs
+    - HR team felt it was for our benefit not theirs
         - "the lighting was inadequate"
             - Libkoki can handle this
         - "carpet was different from last years"
@@ -108,7 +108,7 @@ Meeting Minute - 2019-04-15
         - ~30 students
         - Generally successful
         - STUDENTS CHARGED £25 EACH BUT WE DIDN'T SEE ANY OF IT
-        - Worksheet to go to SRO github #TODO [link](/TODO_placeholder)
+        - Worksheet to go to SRO github #TODO [link](https://github.com/s-r-o/microbits)
     - Reran with feedback
         - Students with a bit more time+experience
         - Went well
