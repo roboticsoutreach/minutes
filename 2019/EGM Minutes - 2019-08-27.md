@@ -16,7 +16,7 @@ EGM Minutes - 2019-08-27
     - Jenny Walker (JW)
     - Dan Hobson (DH)
     - Joe Morton (JM)
-    - Dan Tricky (DT)
+    - Dan Trickey (DT)
     - Kajetan (KC)
 - **Chair:** JW <Jenny.Walker@soton.ac.uk>
 - **Minutes:** DH <dsh1g18@soton.ac.uk>
