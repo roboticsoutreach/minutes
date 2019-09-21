@@ -1,0 +1,35 @@
+# SRO Agenda 2019-09-16
+
+## Tonight
+- PCB design 
+    - Now j5 compatible!
+    - Has been sent off
+    - spec https://docs.google.com/document/d/1pf5wGSrj7h_qfrFPnnWPqddM_j6RUaUJid8pw0HhdQQ/edit?usp=sharing
+- Freshers events
+    - Make facebook event for pre-fresher's thing
+    - Book seminar room for saturday hack day
+    - [Planning spreadsheet](https://docs.google.com/spreadsheets/d/1iVioLrMPd2--fJ8jIrw5YwwSt36cmaZBMmWLxCKfS3A/edit?usp=sharing)
+    - What chassis are we using for the 30th September?
+        - Don't use cardboard
+    - Balance of hardware and software
+        - Do we teach C? Is it too intimidating?
+        - Micro-python - controversial, some hate it
+    - Finalising schedule up until the 21st of October
+        - Line following mbeds
+        - Jenny as backup if ASV can't do 21st October
+- FutureWorlds Collab
+    - Deal proposed by Tom - 10 minute intro by Ben in the first session, 30th September, in return for 1/2 hour long event management and/or active problem solving workshop by Tom in November. Also tit for tat event promotion (bear in mind FW social media posts reach more people than ours do, but too many posts will put off members)
+- Social for existing members
+    - 2019-09-23
+    - board games and pub
+- Smallpeice 2020 roadmap
+    - [Planning spreadsheet](https://docs.google.com/spreadsheets/d/1on_YNOlQ3MvLda4GuSJ3kPOKJLZ0mdhOU6fFlTalxV4/edit?usp=sharing)
+    - DT has written up a great [timeline page](https://kb.roboticsoutreach.org/events/smallpeice/timeline/) on the knowledge base
+- Outreach
+    - there are a couple of schools interested in visits
+- AOB
+    - Moving to building 32
+    - Follow up with Geoff and Dorota
+    - Go through emails from Dan T to check what the problems were
+        - Sent.
+    - website
