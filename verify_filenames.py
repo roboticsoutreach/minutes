@@ -40,6 +40,10 @@ for f in repo.iterdir():
             print(f"Found folder {f.stem}, ignoring")
         else:
             year_folders.append(f)
+    elif f.is_file():
+        if f.name not in {"verify_filenames.py", "README.md"}:
+            print(f"Found bad file name: {f.name}")
+            status = False
 
 folder_regex = re.compile("^20[0-9]{2}$")
 
