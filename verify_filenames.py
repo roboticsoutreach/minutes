@@ -63,21 +63,28 @@ for folder in year_folders:
 
     for f in folder.iterdir():
 
-       # Test if there are any nested folders
+        # Test if there are any nested folders
 
-       if f.is_dir():
+        if f.is_dir():
            print(f"\tFound nested directory: {folder.stem}/{f.stem}")
            status = False
-       
-       # Verify file name
-       
-       file_result =  re.match(filename_regex, f.name)
 
-       if file_result is None:
-           print(f"\tFound bad file name: {f.name}")
-           status = False
-       else:
-           print(f"\tFound valid file name: {f.name}")
+        # Verify file name
+
+        file_result =  re.match(filename_regex, f.name)
+
+        if file_result is None:
+            print(f"\tFound bad file name: {f.name}")
+            status = False
+        else:
+            # Verify file year
+            file_year = f.name.split('-')[0]
+
+            if file_year != folder.name:
+                print(f"\tFound file in wrong folder: {folder.name}/{f.name}")
+                status = False
+            else:
+                print(f"\tFound valid file name: {f.name}")
 
 if status:
     print("All tests passed.")
