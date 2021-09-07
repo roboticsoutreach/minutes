@@ -80,9 +80,9 @@ def main() -> None:
                 status = False
             else:
                 # Verify file year
-                file_year = f.name.split('-')[0]
+                year, month, day, description = file_result.groups()
 
-                if file_year != folder.name:
+                if year != folder.name:
                     print(f"\tFound file in wrong folder: {folder.name}/{f.name}")
                     status = False
                 else:
