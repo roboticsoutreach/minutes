@@ -30,7 +30,7 @@ def main() -> None:
 
     status = True
 
-    print("Verifying minutes filenames.")
+    print("✍️ Verifying minutes filenames. 👮")
 
     repo = Path(".")
 
@@ -39,12 +39,12 @@ def main() -> None:
     for f in repo.iterdir():
         if f.is_dir():
             if f.name[0] == ".":
-                print(f"Found folder {f.stem}, ignoring")
+                print(f"🙈 Found folder {f.stem}, ignoring 🙈")
             else:
                 year_folders.append(f)
         elif f.is_file():
             if f.name not in {"verify_filenames.py", "README.md"}:
-                print(f"Found bad file name: {f.name}")
+                print(f"🦹 Found bad file name: {f.name} 🦹")
                 status = False
 
     folder_regex = re.compile("^20\d{2}$")
@@ -58,40 +58,39 @@ def main() -> None:
         result = folder_regex.match(folder.name)
 
         if result is None:
-            print(f"Found bad folder name: {folder.name}")
+            print(f"💔 Found bad folder name: {folder.name}")
             status = False
         else:
-            print(f"Found valid folder name: {folder.name}")
+            print(f"💙 Found valid folder name: {folder.name}")
 
         for f in folder.iterdir():
 
             # Test if there are any nested folders
 
             if f.is_dir():
-                print(f"\tFound nested directory: {folder.stem}/{f.stem}")
+                print(f"\t💔 Found nested directory: {folder.stem}/{f.stem} ")
                 status = False
 
             # Verify file name
-
             file_result = filename_regex.match(f.name)
 
             if file_result is None:
-                print(f"\tFound bad file name: {f.name}")
+                print(f"\t💔 Found bad file name: {f.name}")
                 status = False
             else:
                 # Verify file year
                 year, month, day, description = file_result.groups()
 
                 if year != folder.name:
-                    print(f"\tFound file in wrong folder: {folder.name}/{f.name}")
+                    print(f"\t😠 Found file in wrong folder: {folder.name}/{f.name}")
                     status = False
                 else:
-                    print(f"\tFound valid file name: {f.name}")
+                    print(f"\t✔️ Found valid file name: {f.name}")
 
     if status:
-        print("All tests passed.")
+        print("👍 All tests passed. 👍")
     else:
-        print("Some tests failed.")
+        print("🙅 Some tests failed. 😞")
         exit(1)
 
 if __name__ == "__main__":
