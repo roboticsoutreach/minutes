@@ -49,13 +49,13 @@ def main() -> None:
 
     folder_regex = re.compile("^20\d{2}$")
 
-    filename_regex = re.compile(r"^20\d{2}-\d{2}-\d{2}(?:-[a-z0-9-]+)?\.md$")
+    filename_regex = re.compile(r"^(20\d{2})-(\d{2})-(\d{2})(-[a-z0-9-]+)?\.md$")
 
     for folder in year_folders:
 
         # Verify folder name is valid
 
-        result = re.match(folder_regex, folder.name)
+        result = folder_regex.match(folder.name)
 
         if result is None:
             print(f"Found bad folder name: {folder.name}")
@@ -73,7 +73,7 @@ def main() -> None:
 
             # Verify file name
 
-            file_result =  re.match(filename_regex, f.name)
+            file_result = filename_regex.match(f.name)
 
             if file_result is None:
                 print(f"\tFound bad file name: {f.name}")
