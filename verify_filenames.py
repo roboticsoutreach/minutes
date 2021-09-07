@@ -26,68 +26,73 @@
 from pathlib import Path
 import re
 
-status = True
+def main() -> None:
 
-print("Verifying minutes filenames.")
+    status = True
 
-repo = Path(".")
+    print("Verifying minutes filenames.")
 
-year_folders = []
+    repo = Path(".")
 
-for f in repo.iterdir():
-    if f.is_dir():
-        if f.name[0] == ".":
-            print(f"Found folder {f.stem}, ignoring")
-        else:
-            year_folders.append(f)
-    elif f.is_file():
-        if f.name not in {"verify_filenames.py", "README.md"}:
-            print(f"Found bad file name: {f.name}")
-            status = False
+    year_folders = []
 
-folder_regex = re.compile("^20[0-9]{2}$")
-
-filename_regex = re.compile("^20[0-9]{2}-[0-9]{2}-[0-9]{2}((\.md)|(-[a-z0-9-]*\.md))$")
-
-for folder in year_folders:
-
-    # Verify folder name is valid
-
-    result = re.match(folder_regex, folder.name)
-
-    if result is None:
-        print(f"Found bad folder name: {folder.name}")
-        status = False
-    else:
-        print(f"Found valid folder name: {folder.name}")
-
-    for f in folder.iterdir():
-
-        # Test if there are any nested folders
-
+    for f in repo.iterdir():
         if f.is_dir():
-           print(f"\tFound nested directory: {folder.stem}/{f.stem}")
-           status = False
+            if f.name[0] == ".":
+                print(f"Found folder {f.stem}, ignoring")
+            else:
+                year_folders.append(f)
+        elif f.is_file():
+            if f.name not in {"verify_filenames.py", "README.md"}:
+                print(f"Found bad file name: {f.name}")
+                status = False
 
-        # Verify file name
+    folder_regex = re.compile("^20\d{2}$")
 
-        file_result =  re.match(filename_regex, f.name)
+    filename_regex = re.compile(r"^20\d{2}-\d{2}-\d{2}(?:-[a-z0-9-]+)?\.md$")
 
-        if file_result is None:
-            print(f"\tFound bad file name: {f.name}")
+    for folder in year_folders:
+
+        # Verify folder name is valid
+
+        result = re.match(folder_regex, folder.name)
+
+        if result is None:
+            print(f"Found bad folder name: {folder.name}")
             status = False
         else:
-            # Verify file year
-            file_year = f.name.split('-')[0]
+            print(f"Found valid folder name: {folder.name}")
 
-            if file_year != folder.name:
-                print(f"\tFound file in wrong folder: {folder.name}/{f.name}")
+        for f in folder.iterdir():
+
+            # Test if there are any nested folders
+
+            if f.is_dir():
+                print(f"\tFound nested directory: {folder.stem}/{f.stem}")
+                status = False
+
+            # Verify file name
+
+            file_result =  re.match(filename_regex, f.name)
+
+            if file_result is None:
+                print(f"\tFound bad file name: {f.name}")
                 status = False
             else:
-                print(f"\tFound valid file name: {f.name}")
+                # Verify file year
+                file_year = f.name.split('-')[0]
 
-if status:
-    print("All tests passed.")
-else:
-    print("Some tests failed.")
-    exit(1)
+                if file_year != folder.name:
+                    print(f"\tFound file in wrong folder: {folder.name}/{f.name}")
+                    status = False
+                else:
+                    print(f"\tFound valid file name: {f.name}")
+
+    if status:
+        print("All tests passed.")
+    else:
+        print("Some tests failed.")
+        exit(1)
+
+if __name__ == "__main__":
+    main()
