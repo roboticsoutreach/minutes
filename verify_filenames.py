@@ -61,7 +61,7 @@ def main() -> None:
 
         for file in year_folder.iterdir():
             if file.is_dir():
-                print(f"\t💔 Found nested directory: {year_folder.stem}/{file.stem} ")
+                print(f"\t💔 Found nested directory: {year_folder.stem}/{file.stem}")
                 all_passed = False
             else:
 
