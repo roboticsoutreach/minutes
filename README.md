@@ -1,7 +1,5 @@
 # Minutes
 
-[![CircleCI](https://circleci.com/gh/roboticsoutreach/minutes.svg?style=svg)](https://circleci.com/gh/roboticsoutreach/minutes)
-
 Repository for the society minutes
 
 All files should be in [Markdown format](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
