@@ -63,23 +63,25 @@ def main() -> None:
             if file.is_dir():
                 print(f"\t💔 Found nested directory: {year_folder.stem}/{file.stem}")
                 all_passed = False
-            else:
+                continue
 
-                # Verify file name
-                file_result = FILENAME_REGEX.match(file.name)
+            # Verify file name
+            file_result = FILENAME_REGEX.match(file.name)
 
-                if file_result is None:
-                    print(f"\t💔 Found bad file name: {file.name}")
-                    all_passed = False
-                else:
-                    # Verify file year
-                    year, month, day, description = file_result.groups()
+            if file_result is None:
+                print(f"\t💔 Found bad file name: {file.name}")
+                all_passed = False
+                continue
 
-                    if year != year_folder.name:
-                        print(f"\t😠 Found file in wrong folder: {year_folder.name}/{file.name}")
-                        all_passed = False
-                    else:
-                        print(f"\t✔️ Found valid file name: {file.name}")
+            # Verify file year
+            year, month, day, description = file_result.groups()
+
+            if year != year_folder.name:
+                print(f"\t😠 Found file in wrong folder: {year_folder.name}/{file.name}")
+                all_passed = False
+                continue
+
+            print(f"\t✔️ Found valid file name: {file.name}")
 
     if all_passed:
         print("👍 All tests passed. 👍")
